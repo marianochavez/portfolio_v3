@@ -1,0 +1,30 @@
+import React from "react"
+
+import GradientImage from "../ui/gradient-image"
+import TextReveal from "../ui/text-reveal"
+
+const HomeSection = () => {
+  return (
+    <section className="flex h-screen items-center justify-center">
+      <div className="relative">
+        <GradientImage />
+        <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 space-y-5">
+          <h1 className="flex text-9xl font-bold">
+            <TextReveal text={"Mariano"} />
+            <span>&nbsp;</span>
+          </h1>
+          <h1 className="flex justify-end text-9xl font-bold">
+            <TextReveal text={"Chavez"} />
+          </h1>
+        </div>
+        <div className="flex items-center space-x-2">
+          <p className="font-headings text-2xl">Frontend</p>
+          <div className="flex h-[1px] flex-1 self-center bg-foreground" />
+          <p className="font-headings text-2xl">Developer</p>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default HomeSection
