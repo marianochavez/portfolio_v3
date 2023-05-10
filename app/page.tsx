@@ -1,10 +1,11 @@
-import HomeSection from '@/components/sections/home-section'
-import Image from 'next/image'
+import AboutSection from "@/components/sections/about/about-section"
+import HomeSection from "@/components/sections/home/home-section"
 
 export default function Home() {
   return (
     <main>
-      <HomeSection/>
+      <HomeSection />
+      <AboutSection />
     </main>
   )
 }

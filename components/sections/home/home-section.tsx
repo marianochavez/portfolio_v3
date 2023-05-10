@@ -1,12 +1,11 @@
-import React from "react"
+import TextReveal from "@/components/ui/text-reveal"
 
-import GradientImage from "../ui/gradient-image"
-import TextReveal from "../ui/text-reveal"
+import GradientImage from "./gradient-image"
 
 const HomeSection = () => {
   return (
     <section className="flex h-screen items-center justify-center">
-      <div className="relative">
+      <div className="relative scale-50 md:scale-100">
         <GradientImage />
         <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 space-y-5">
           <h1 className="flex text-9xl font-bold">
