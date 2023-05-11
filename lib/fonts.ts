@@ -6,7 +6,7 @@ export const spaceMono = Space_Mono({
   weight: "400",
   display: "swap",
   // TODO: check if this affects performance
-  preload: false,
+  // preload: false,
 })
 
 export const majorMono = Major_Mono_Display({
@@ -14,5 +14,5 @@ export const majorMono = Major_Mono_Display({
   variable: "--font-major-mono",
   weight: "400",
   display: "swap",
-  preload: false,
+  // preload: false,
 })

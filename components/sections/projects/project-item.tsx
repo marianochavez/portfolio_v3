@@ -15,7 +15,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="rounded-lg bg-purple-600">
+    <div className="rounded-lg bg-purple-700">
       <div
         className={cn(
           "h-full overflow-hidden rounded-lg",
@@ -29,12 +29,14 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
         }}
       >
         <ProjectHeader project={project} isHovered={isHovered} />
-        <div className="flex h-[calc(100%-190px)] flex-col bg-[#171717] p-3">
-          <h3 className="text-xl font-bold">{project.name}</h3>
+        <div className="flex h-[calc(100%-190px)] flex-col bg-[#272727] p-3">
+          <p className="text-xl font-bold">{project.name}</p>
           <p className="flex-1 pt-2 text-sm">{project.description}</p>
           <div className="flex flex-wrap gap-2 pt-2 ">
             {project.tools.map((tool) => (
-              <Badge key={tool} className="bg-purple-300">{tool}</Badge>
+              <Badge key={tool} className="bg-indigo-200">
+                {tool}
+              </Badge>
             ))}
           </div>
         </div>
@@ -61,33 +63,45 @@ const ProjectHeader = ({ project, isHovered }: ProjectHeaderProps) => {
         />
       </div>
       <div className="absolute z-10 flex space-x-2">
-        <a href={project.github} target="_blank" rel="noopener noreferrer">
-          <Button
-            className={cn(
-              "bg-purple-400",
-              isHovered ? "opacity-100" : "opacity-0"
-            )}
-            size="sm"
-          >
-            Repository
-          </Button>
-        </a>
+        <ProjectHeaderButton
+          title={"Repository"}
+          link={project.github}
+          isHovered={isHovered}
+        />
         {project.url && (
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            <Button
-              className={cn(
-                "bg-purple-400",
-                isHovered ? "opacity-100" : "opacity-0"
-              )}
-              size="sm"
-            >
-              Page
-            </Button>
-          </a>
+          <ProjectHeaderButton
+            title={"Website"}
+            link={project.url}
+            isHovered={isHovered}
+          />
         )}
       </div>
     </div>
   )
 }
+
+type ProjectHeaderButtonProps = {
+  title: string
+  link: string
+  isHovered: boolean
+}
+const ProjectHeaderButton = ({
+  title,
+  link,
+  isHovered,
+}: ProjectHeaderButtonProps) => (
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <Button
+      className={cn(
+        "bg-indigo-500 font-semibold text-white transition-opacity ease-in hover:bg-indigo-400 hover:text-black",
+        isHovered ? "opacity-100" : "opacity-0",
+      )}
+      size="sm"
+
+    >
+      {title}
+    </Button>
+  </a>
+)
 
 export default ProjectItem
