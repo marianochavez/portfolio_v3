@@ -3,12 +3,13 @@ import { dataEN } from "@/data/en"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import ChevronsDown from "@/components/ui/chevrons-down"
 
 import styles from "./about.module.css"
 
 const AboutSection = () => {
   return (
-    <section className="flex min-h-screen items-center justify-center py-5">
+    <section className="flex flex-col  items-center justify-evenly pt-5">
       <div
         className={cn(
           "flex max-w-[85%] flex-col bg-[#171717] p-3  md:max-w-[90%] md:flex-row lg:max-w-[70%]",
@@ -24,7 +25,7 @@ const AboutSection = () => {
         <div
           className={cn(
             "order-1 flex flex-1 items-center justify-center space-y-5",
-            "md:order-2 md:flex-col md:border-l"
+            "border-white md:order-2 md:flex-col md:border-l"
           )}
         >
           <Image
@@ -45,6 +46,10 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      <div className="py-7">
+        <ChevronsDown />
+      </div>
     </section>
   )
 }
@@ -58,7 +63,7 @@ const ResumeButton = ({ className }: { className?: string }) => (
 )
 
 const Description = () => (
-  <p className="flex flex-col space-y-2 text-sm md:text-base">
+  <p className="flex flex-col space-y-3 text-sm md:text-base">
     <span>
       Hi{" "}
       <span aria-labelledby="wave" className={styles.wave} role="img">

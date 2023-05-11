@@ -1,3 +1,5 @@
+export type DataEN = typeof dataEN;
+
 export const dataEN = {
   sections: [
     {title: "About", to: "about"},
@@ -115,4 +117,4 @@ export const dataEN = {
       description: `These are just some of my projects, you can see more in my GitHub repository.`,
     },
   ],
-} as const;
+};
