@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: #171717;
+    --background: hsl(0, 0%, 9%);
     --foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -37,7 +37,7 @@
   }
 
   .dark {
-    --background: #fafafa;
+    --background: hsl(0, 0%, 98%);
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;

@@ -4,6 +4,7 @@ import { type Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { majorMono, spaceMono } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import { Toaster } from "@/components/ui/toaster"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -37,7 +38,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div>{children}</div>
+          <main>{children}</main>
+          <Toaster />
           <TailwindIndicator />
         </ThemeProvider>
       </body>
