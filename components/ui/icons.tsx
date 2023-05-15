@@ -1,8 +1,11 @@
 import {
   File,
   Github,
+  Heart,
   Linkedin,
   Icon as LucideIcon,
+  Terminal,
+  TextCursor,
   Twitter,
 } from "lucide-react"
 
@@ -69,4 +72,7 @@ export const Icons = {
       />
     </svg>
   ),
+  terminal: Terminal,
+  heart: Heart,
+  textCursor: TextCursor,
 }

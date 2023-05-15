@@ -1,6 +1,6 @@
-const {fontFamily} = require ('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
@@ -66,14 +66,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "cursor-blink": {
+          "50%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "cursor-blink": "cursor-blink 1s step-end infinite",
       },
-      animationDuration: {
-        "2s": "2s",
-      }
     },
   },
   plugins: [require("tailwindcss-animate")],
