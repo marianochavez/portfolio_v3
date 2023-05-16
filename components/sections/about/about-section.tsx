@@ -55,7 +55,7 @@ const AboutSection = () => {
 
 const ResumeButton = ({ className }: { className?: string }) => (
   <Button className={cn("bg-purple-500 text-white transition-all hover:scale-105 hover:bg-purple-200 hover:text-black", className)} size="sm">
-    <a href={"/cv-Mariano-Chavez.pdf"} target="_blank">
+    <a href={"/MarianoChavez_CV.pdf"} target="_blank">
       Download resume
     </a>
   </Button>
