@@ -3,16 +3,15 @@ import { dataEN } from "@/data/en"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import ChevronsDown from "@/components/ui/chevrons-down"
 
 import styles from "./about.module.css"
 
 const AboutSection = () => {
   return (
-    <section id="about" className="flex flex-col  items-center justify-evenly pt-5">
+    <section id="about" className="flex flex-col items-center justify-evenly pb-20 pt-5">
       <div
         className={cn(
-          "flex max-w-[85%] flex-col bg-[#171717] p-3  md:max-w-[90%] md:flex-row lg:max-w-[70%]",
+          "flex w-[85%] flex-col bg-[#171717] p-3 md:flex-row lg:max-w-5xl",
           styles.boxGlow
         )}
       >
@@ -37,7 +36,7 @@ const AboutSection = () => {
             loading="lazy"
           />
           <div className="hidden flex-col space-y-5 md:flex ">
-            <h2 className="font-headings text-3xl ">
+            <h2 className="text-center font-headings text-3xl">
               {dataEN.about.firstName} {dataEN.about.lastName}
             </h2>
             <div className="self-center">
@@ -47,15 +46,15 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="py-7">
+      {/* <div className="py-7">
         <ChevronsDown />
-      </div>
+      </div> */}
     </section>
   )
 }
 
 const ResumeButton = ({ className }: { className?: string }) => (
-  <Button className={cn("bg-purple-400", className)} size="sm">
+  <Button className={cn("bg-purple-500 text-white transition-all hover:scale-105 hover:bg-purple-200 hover:text-black", className)} size="sm">
     <a href={"/cv-Mariano-Chavez.pdf"} target="_blank">
       Download resume
     </a>

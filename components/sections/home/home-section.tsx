@@ -17,7 +17,7 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="flex items-center space-x-2">
-          <p className="font-headings text-2xl">Frontend</p>
+          <p className="font-headings text-2xl">Software</p>
           <div className="flex h-[1px] flex-1 self-center bg-foreground" />
           <p className="font-headings text-2xl">Developer</p>
         </div>

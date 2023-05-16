@@ -12,15 +12,17 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+  keywords: siteConfig.keywords,
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    images: [siteConfig.image],
+    type: "website",
+  },
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "black" }],
   icons: {
-    // TODO: add icons
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
   },
 }
 

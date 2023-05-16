@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState, type MutableRefObject } from "react"
 import Image from "next/image"
 import { type DataEN } from "@/data/en"
 
@@ -34,7 +34,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
           <p className="flex-1 pt-2 text-sm">{project.description}</p>
           <div className="flex flex-wrap gap-2 pt-2 ">
             {project.tools.map((tool) => (
-              <Badge key={tool} className="bg-indigo-200">
+              <Badge key={tool} className="bg-purple-200">
                 {tool}
               </Badge>
             ))}
@@ -52,11 +52,16 @@ type ProjectHeaderProps = {
 const ProjectHeader = ({ project, isHovered }: ProjectHeaderProps) => {
   return (
     <div className="flex items-center justify-center overflow-hidden">
-      <div className="relative min-h-[190px] w-full">
+      <div
+        className={cn(
+          "relative min-h-[190px] w-full transition-all",
+          isHovered ? "scale-100" : "scale-105"
+        )}
+      >
         <Image
           src={project.img}
           alt={project.name}
-          className="object-cover"
+          className={cn("object-cover ", isHovered ? "grayscale-0" : "grayscale")}
           loading="lazy"
           fill
           sizes="100% 190px"
@@ -89,19 +94,25 @@ const ProjectHeaderButton = ({
   title,
   link,
   isHovered,
-}: ProjectHeaderButtonProps) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
-    <Button
-      className={cn(
-        "bg-indigo-500 font-semibold text-white transition-opacity ease-in hover:bg-indigo-400 hover:text-black",
-        isHovered ? "opacity-100" : "opacity-0",
-      )}
-      size="sm"
-
+}: ProjectHeaderButtonProps) => {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={isHovered ? "pointer-events-auto" : "pointer-events-none"}
     >
-      {title}
-    </Button>
-  </a>
-)
+      <Button
+        className={cn(
+          "bg-purple-500 font-semibold text-white transition-all ease-in hover:bg-purple-300 hover:text-black",
+          isHovered ? "opacity-100" : "opacity-0"
+        )}
+        size="sm"
+      >
+        {title}
+      </Button>
+    </a>
+  )
+}
 
 export default ProjectItem
