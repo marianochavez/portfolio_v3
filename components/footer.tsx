@@ -1,3 +1,7 @@
+"use client"
+
+import { scrollToSection } from "@/lib/scroll"
+
 import { Icons } from "./ui/icons"
 
 const Footer = () => {
@@ -9,12 +13,22 @@ const Footer = () => {
         <Icons.textCursor className="h-4  w-4 animate-cursor-blink" />
       </div>
       <div className="flex items-center space-x-5">
-        <p className="font-bold">About</p>
-        <p className="font-bold">Projects</p>
-        <p className="font-bold">Contact</p>
+        <Link title="About" section="about" />
+        <Link title="Projects" section="projects" />
+        <Link title="Contact" section="contact" />
       </div>
     </div>
   )
 }
+
+type LinkProps = {
+  title: string
+  section: string
+}
+const Link = ({ title, section }: LinkProps) => (
+  <p className="cursor-pointer font-bold transition-transform hover:scale-110" onClick={() => scrollToSection(section)}>
+    {title}
+  </p>
+)
 
 export default Footer

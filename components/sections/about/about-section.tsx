@@ -9,7 +9,7 @@ import styles from "./about.module.css"
 
 const AboutSection = () => {
   return (
-    <section className="flex flex-col  items-center justify-evenly pt-5">
+    <section id="about" className="flex flex-col  items-center justify-evenly pt-5">
       <div
         className={cn(
           "flex max-w-[85%] flex-col bg-[#171717] p-3  md:max-w-[90%] md:flex-row lg:max-w-[70%]",
