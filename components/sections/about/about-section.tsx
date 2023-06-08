@@ -8,7 +8,10 @@ import styles from "./about.module.css"
 
 const AboutSection = () => {
   return (
-    <section id="about" className="flex flex-col items-center justify-evenly pb-20 pt-5">
+    <section
+      id="about"
+      className="flex flex-col items-center justify-evenly pb-20 pt-5"
+    >
       <div
         className={cn(
           "flex w-[85%] flex-col bg-[#171717] p-3 md:flex-row lg:max-w-5xl",
@@ -54,11 +57,17 @@ const AboutSection = () => {
 }
 
 const ResumeButton = ({ className }: { className?: string }) => (
-  <Button className={cn("bg-purple-500 text-white transition-all hover:scale-105 hover:bg-purple-200 hover:text-black", className)} size="sm">
-    <a href={"/MarianoChavez_CV.pdf"} target="_blank">
+  <a href={"/MarianoChavez_CV.pdf"} target="_blank">
+    <Button
+      className={cn(
+        "bg-purple-500 text-white transition-all hover:scale-105 hover:bg-purple-200 hover:text-black",
+        className
+      )}
+      size="sm"
+    >
       Download resume
-    </a>
-  </Button>
+    </Button>
+  </a>
 )
 
 const Description = () => (
