@@ -24,12 +24,28 @@ export const dataEN = {
   },
   projects: [
     {
+      name: "Spotify Clone",
+      img: "https://res.cloudinary.com/chavedo/image/upload/c_scale,w_512/v1686496425/portfolio/spotify_clone.webp",
+      tools: ["NextJS", "TypeScript", "Supabase", "Stripe", "Tailwind", "Zustand", "use-sound"],
+      url: "https://spotify-clone-vedo.vercel.app/",
+      github: "https://github.com/marianochavez/spotify_clone",
+      description: `Spotify clone with song upload, subscribe integration, credentials, music player, favorites system and much more.`,
+    },
+    {
       name: "Tesla Shop",
       img: "https://res.cloudinary.com/chavedo/image/upload/c_scale,w_512/v1661522748/portfolio/tesla-shop.webp",
       tools: ["NextJS", "TypeScript", "MongoDB", "ChakraUI", "NextAuth", "Paypal"],
       url: "https://tesla-shop-nextjs.vercel.app/",
       github: "https://github.com/marianochavez/tesla_shop_nextjs",
       description: `Store for clothing sales with user management, orders, purchases and payment. It contains an administrative part for statistics, users and products.`,
+    },
+    {
+      name: "Jaguarete Kaa",
+      img: "https://res.cloudinary.com/chavedo/image/upload/c_scale,w_512/v1661525134/portfolio/jaguarete-kaa.webp",
+      tools: ["Django", "SQL", "CrispyForms", "Bootstrap"],
+      url: "https://www.youtube.com/watch?v=KVkEf167GME",
+      github: "https://github.com/marianochavez/jaguarete_ecommerce_django",
+      description: `Ecommerce for the sale of technological products. It has user management, products, categories, account recovery and administrative page.`,
     },
     {
       name: "UPS Clone",
@@ -45,14 +61,6 @@ export const dataEN = {
       github: "https://github.com/marianochavez/amazon_scraper",
       url: "https://amazon-scraper-frontend.vercel.app/",
       description: "Application to scrape Amazon products, implementing functions in the cloud to perform asynchronous tasks.",
-    },
-    {
-      name: "Jaguarete Kaa",
-      img: "https://res.cloudinary.com/chavedo/image/upload/c_scale,w_512/v1661525134/portfolio/jaguarete-kaa.webp",
-      tools: ["Django", "SQL", "CrispyForms", "Bootstrap"],
-      url: "https://www.youtube.com/watch?v=KVkEf167GME",
-      github: "https://github.com/marianochavez/jaguarete_ecommerce_django",
-      description: `Ecommerce for the sale of technological products. It has user management, products, categories, account recovery and administrative page.`,
     },
     {
       name: "Ebay Thirdweb",
@@ -85,14 +93,6 @@ export const dataEN = {
       url: "https://tateti-react-rails.vercel.app/",
       github: "https://github.com/marianochavez/tateti_frontend_react",
       description: `Tateti game with user registration, 1 vs 1 in real time, uses backend made in Rails.`,
-    },
-    {
-      name: "Map box",
-      img: "https://res.cloudinary.com/chavedo/image/upload/c_scale,w_512/v1661526366/portfolio/mapbox-app.webp",
-      tools: ["React", "TypeScript", "Mapbox", "Axios"],
-      url: "https://mapbox-react-mc.netlify.app/",
-      github: "https://github.com/marianochavez/react_mapbox",
-      description: `Page to search for addresses and mark your route using mapbox.`,
     },
     {
       name: "Arg News",
