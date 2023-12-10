@@ -80,19 +80,15 @@ const Description = () => (
       , I&apos;m Mariano!
     </span>
     <span>
-      I am a <HL>full stack</HL> developer with a great passion for programming.
-      I<HL> specialize in frontend</HL> development, using technologies such as
-      JavaScript, React and Next.js.
+      I&apos;m a passionate <HL>full stack</HL> developer skilled in
+      technologies like JavaScript, React, Next.js, Node.js, NestJS, Python, and
+      AI tools. My focus is on applying <HL>design patterns</HL> and{" "}
+      <HL>engineering principles</HL> to create efficient, high-quality web
+      applications.
     </span>
     <span>
-      I also have experience in backend development, using Node.js, Django and
-      Ruby on Rails. I like to apply <HL>design patterns </HL>
-      and <HL>engineering principles </HL>
-      to create web applications of quality and efficiency.
-    </span>
-    <span>
-      My goal is to keep learning new technologies and exploring different
-      domains of knowledge.
+      Driven by continuous learning, I aim to grow professionally, embrace new
+      technologies, and add value to projects and teams.
     </span>
   </p>
 )

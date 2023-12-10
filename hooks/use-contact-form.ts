@@ -44,7 +44,7 @@ export const useContactForm = () => {
       reset()
       toast({
         title: "Message sent",
-        description: "We will contact you soon",
+        description: "Thanks for reaching out. I'll get back to you soon.",
         duration: 4000,
       })
     } catch (error) {
