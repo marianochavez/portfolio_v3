@@ -73,10 +73,17 @@ const Description = () => (
       <span aria-labelledby="wave" className={styles.wave} role="img">
         👋🏻
       </span>
-      , I&apos;m Mariano, a <HL>full stack developer</HL> with a deep passion for the art of programming and creating innovative solutions.
+      , I&apos;m Mariano, a <HL>Full Stack</HL> developer with a deep passion
+      for the art of programming and creating innovative solutions.
     </span>
     <span>
-      My focus goes beyond tools and technologies; it's about contributing to the success of the team, the vision of the project, and the value delivered to the client. My goal is to drive innovation, grow professionally, and make significant contributions to every project I am involved in.
+      My focus goes beyond tools and technologies; it&apos;s about contributing
+      to the success of the team, the vision of the project, and the value
+      delivered to the client.
+    </span>
+    <span>
+      My goal is to drive innovation, grow professionally, and make significant
+      contributions to every project I am involved in.
     </span>
   </p>
 )
