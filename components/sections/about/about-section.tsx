@@ -48,10 +48,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="py-7">
-        <ChevronsDown />
-      </div> */}
     </section>
   )
 }
@@ -77,18 +73,10 @@ const Description = () => (
       <span aria-labelledby="wave" className={styles.wave} role="img">
         👋🏻
       </span>
-      , I&apos;m Mariano!
+      , I&apos;m Mariano, a <HL>full stack developer</HL> with a deep passion for the art of programming and creating innovative solutions.
     </span>
     <span>
-      I&apos;m a passionate <HL>full stack</HL> developer skilled in
-      technologies like JavaScript, React, Next.js, Node.js, NestJS, Python, and
-      AI tools. My focus is on applying <HL>design patterns</HL> and{" "}
-      <HL>engineering principles</HL> to create efficient, high-quality web
-      applications.
-    </span>
-    <span>
-      Driven by continuous learning, I aim to grow professionally, embrace new
-      technologies, and add value to projects and teams.
+      My focus goes beyond tools and technologies; it's about contributing to the success of the team, the vision of the project, and the value delivered to the client. My goal is to drive innovation, grow professionally, and make significant contributions to every project I am involved in.
     </span>
   </p>
 )
