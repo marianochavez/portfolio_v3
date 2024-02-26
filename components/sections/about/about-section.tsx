@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { dataEN } from "@/data/en"
 
 import { cn } from "@/lib/utils"
@@ -53,7 +54,11 @@ const AboutSection = () => {
 }
 
 const ResumeButton = ({ className }: { className?: string }) => (
-  <a href={"/MarianoChavez_CV.pdf"} target="_blank">
+  <Link
+    href="https://drive.google.com/file/d/1ypmtSjoDF_GvM2elJHiOGpTsa7MRRMpT/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Button
       className={cn(
         "bg-purple-500 text-white transition-all hover:scale-105 hover:bg-purple-200 hover:text-black",
@@ -61,9 +66,9 @@ const ResumeButton = ({ className }: { className?: string }) => (
       )}
       size="sm"
     >
-      Download resume
+      View resume
     </Button>
-  </a>
+  </Link>
 )
 
 const Description = () => (

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
@@ -35,7 +36,7 @@ const SpinButton = ({
   }
 
   return (
-    <a
+    <Link
       href={url}
       rel="noopener noreferrer"
       target="_blank"
@@ -59,7 +60,7 @@ const SpinButton = ({
       >
         {icon}
       </button>
-    </a>
+    </Link>
   )
 }
 

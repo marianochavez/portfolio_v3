@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type MutableRefObject } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { type DataEN } from "@/data/en"
 
 import { cn } from "@/lib/utils"
@@ -96,7 +97,7 @@ const ProjectHeaderButton = ({
   isHovered,
 }: ProjectHeaderButtonProps) => {
   return (
-    <a
+    <Link
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -111,7 +112,7 @@ const ProjectHeaderButton = ({
       >
         {title}
       </Button>
-    </a>
+    </Link>
   )
 }
 

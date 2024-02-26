@@ -11,6 +11,7 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://marianochavez.tech"),
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: siteConfig.keywords,

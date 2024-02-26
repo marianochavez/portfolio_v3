@@ -51,7 +51,7 @@ const ContactSpin = ({ className }: ContactSpinProps) => {
           ariaLabel="Curriculum Vitae"
           icon={<Icons.file className="h-8 w-8 md:h-12 md:w-12" />}
           order={4}
-          url="/MarianoChavez_CV.pdf"
+          url="https://drive.google.com/file/d/1ypmtSjoDF_GvM2elJHiOGpTsa7MRRMpT/view?usp=sharing"
           isInView={isInView}
         />
       </div>
